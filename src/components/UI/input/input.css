@@ -1,0 +1,17 @@
+.search {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    background: white url(./search.svg) no-repeat center right 6px;
+    background-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.search:focus {
+    outline: 2px solid rgba(26, 26, 194, 0.8);
+}

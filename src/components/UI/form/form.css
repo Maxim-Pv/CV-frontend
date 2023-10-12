@@ -1,0 +1,6 @@
+.form {
+    width: 80vw;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
