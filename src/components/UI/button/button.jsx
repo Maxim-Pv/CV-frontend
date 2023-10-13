@@ -1,8 +1,10 @@
 import './button.css';
 
-const Button = function () {
+const Button = function (props) {
     return (
-        <button className='button'>Advanced Search</button>
+        <button className='button' onClick={props.onClick}>
+            Submit
+        </button>
     )
 }
 

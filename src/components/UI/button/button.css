@@ -1,8 +1,9 @@
 .button {
-    width: 16%;
+    width: 78%;
+    padding: 10px;
     border-radius: 5px;
     border: none;
-    background-color: rgba(26, 26, 194, 0.8);
+    background-color: rgb(156 39 176);
     color: white;
 }
 

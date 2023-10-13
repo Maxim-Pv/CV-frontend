@@ -1,7 +1,9 @@
 import './input.css';
 
-const Input = function () {
-    return <input className='search' placeholder='Search' /> 
+const Input = function (props) {
+    return <input className='input' placeholder={props.placeholder} value={props.value} onChange={(event) => {
+        props.onChange(event.target.value);
+    }}/> 
 }
 
 export default Input;
