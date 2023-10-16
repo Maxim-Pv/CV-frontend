@@ -1,9 +1,11 @@
 import './input.css';
 
-const Input = function (props) {
-    return <input className='input' placeholder={props.placeholder} value={props.value} onChange={(event) => {
-        props.onChange(event.target.value);
-    }}/> 
+const Input = function ({value, setValue}) {
+    return (
+        <input className='input' value={value} onChange={(event) => {
+            setValue(event.target.value)
+        }}/>
+    ) 
 }
 
 export default Input;

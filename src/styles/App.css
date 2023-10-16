@@ -3,12 +3,24 @@
 }
 
 .App {
+  margin: 0 auto;
+  padding: 30px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  background-color: #0e122a;
+  align-items: center;
+  background-color: rgb(194 199 227 / 37%);
 }
 
-.App-header {
+.form-container {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* .App-header {
   width: 300px;
   height: 300px;
   margin: 30px;
@@ -35,4 +47,4 @@
   font-size: 18px;
   font-weight: 500;
   color: #253172;
-}
+} */

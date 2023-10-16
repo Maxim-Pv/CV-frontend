@@ -1,10 +1,8 @@
 import './button.css';
 
-const Button = function (props) {
+const Button = function ({onClick}) {
     return (
-        <button className='button' onClick={props.onClick}>
-            Submit
-        </button>
+        <button className='button' onClick={onClick}> Add </button>  
     )
 }
 
