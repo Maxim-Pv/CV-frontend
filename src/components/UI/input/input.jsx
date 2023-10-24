@@ -1,10 +1,13 @@
 import './input.css';
 
 const Input = function ({value, setValue}) {
+
+    const handleInputChange = ((event) => {
+        setValue(event.target.value)
+    });
+
     return (
-        <input className='input' value={value} onChange={(event) => {
-            setValue(event.target.value)
-        }}/>
+         <input className='input' value={value} placeholder = "Enter your data..." onChange={handleInputChange} />
     ) 
 }
 

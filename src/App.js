@@ -1,30 +1,54 @@
-import { useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import './styles/App.css';
 import Input from './components/UI/input/input';
 import Button from './components/UI/button/button';
 import Card from './components/UI/card/card';
+import axios from 'axios';
+import Select from './components/select/select';
 
-const cards = [
-  { id: 0, name: 'John Arderne'},
-  { id: 1, name: 'Arthur Adams'},
-  { id: 2, name: 'William Aiton'},
-  { id: 3, name: 'David Axon'},
-  { id: 4, name: 'James Bradley'},
-];
 
 function App() {
-  const [list, setList] = useState(cards);
+  const [data, setData] = useState([]);
   const [query, setQuery] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  
+  const [selectedSort, setSelectedSort] = useState('');
 
+  useEffect(() => {
+    async function fetchData() {
+      setIsLoading(true);
+      const response = await axios.get('https://jsonplaceholder.typicode.com/users');
+      setData(response.data);
+      setIsLoading(false);
+    }
+    fetchData();
+  }, []);
+  
   const handleAddName = () => {
-    const newUser = { id: new Date(), name: query};
-    setList([...list, newUser]);
+    const newUser = { id: new Date(), name: query };
+    setData([...data, newUser]);
     setQuery('');
   }
 
   const removeCard = (id) => {
-    const updatedList = list.filter((card) => card.id !== id);
-    setList(updatedList);
+    const updatedData = data.filter((user) => user.id !== id);
+    setData(updatedData);
+  }
+
+  const sortDataUsers = (sort) => {
+    setSelectedSort(sort);
+  }
+
+  const sortedData = useMemo(() => {
+      if (selectedSort === 'user.name') {
+        return [...data].sort((a, b) => a.name.localeCompare(b.name));
+      }
+      return data;
+
+  }, [data, selectedSort]);
+
+  if (isLoading) {
+    return <div style={{padding: '20px'}}>Loading...</div>
   }
 
   return (
@@ -33,11 +57,19 @@ function App() {
       <div className='form-container'>
         <Input value={query} setValue={setQuery} />
         <Button onClick={handleAddName} />
-      </div>
-
-      {list.map((card) => {
+        <Select 
+          value={selectedSort}
+          onChange={sortDataUsers}
+          defaultValue='sorting' 
+          options = {[
+            {value: 'user.name', name: 'by name'},
+            {value: 'user.id', name: 'default'},
+          ]}
+        />
+      </div>      
+      {sortedData.map((user) => {
         return (
-          <Card key={card.id} id={card.id} name={card.name} onRemove={removeCard} />
+          <Card key={user.id} id={user.id} name={user.name} onRemove={removeCard} />
         )
       })}
     </div>
