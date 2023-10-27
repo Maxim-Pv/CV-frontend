@@ -1,0 +1,154 @@
+/* Main */
+
+.container {
+    margin: 0 auto;
+    height: 100vh;
+    padding: 60px;
+    display: flex;
+    gap: 1rem;
+    background-color: rgba(15,23,42);
+}
+
+.header {
+    width: 50%;
+    color: white;
+    padding-left: 20px;
+}
+
+.whatIdo {
+    color: #c6c6c6;
+}
+
+.main {
+    width: 50%;
+    color: #c6c6c6;
+}
+
+.icons {
+    padding-top: 25px;
+    display: flex;
+    gap: 1rem;
+}
+
+.githubIcon,
+.faInstagram,
+.faLinkedin {
+    color: grey;
+    transition: color 0.3s;
+}
+
+.githubIcon:hover ,
+.faInstagram:hover,
+.faLinkedin:hover {
+    color: white;
+}
+
+/* Portfolio */
+
+.container__portfolio {
+    margin: 0 auto;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem;
+    background-color: rgba(15,23,42);
+}
+
+.portfolio_data {
+    width: 30%;
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+.portfolio_content {
+    width: 60%;
+}
+
+.portfolio_item {
+    display: flex;
+    padding: 20px;
+    color: grey;   
+}
+
+.portfolio_heading {
+    margin: 0;
+    color: white;
+}
+
+/* Contacts */
+
+.container__contacts {
+    margin: 0 auto;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: grey;
+    background-color: rgba(15,23,42);
+}
+
+.contacts_item {
+    width: 50%;
+}
+
+.contacts_heading {
+    color: white;
+}
+
+.contacts_link {
+    text-decoration: none;
+    color: grey;
+}
+
+.contacts_link:hover {
+    color: white;
+    transition: color 0.3s;
+}
+
+.contacts_address {
+    display: flex;
+    width: 52%;
+}
+
+.contacts_icons {
+    width: 50%;
+    padding-top: 25px;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Page404 */
+
+.container_404 {
+    margin: 0 auto;
+    height: 100vh;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: grey;
+    background-color: rgba(15,23,42);
+}
+
+.number404 {
+    font-size: 8rem;
+    color: white;
+}
+
+.button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: grey;
+    color: white;
+}
+
+.button:hover {
+    background-color: white;
+    color: grey;
+    transition: background-color, color 0.3s;
+}
