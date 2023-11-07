@@ -1,0 +1,79 @@
+.container__contacts {
+    margin: 0 auto;
+    padding: 60px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: grey;
+    background-color: rgba(15,23,42);
+}
+
+.contacts_item {
+    width: 50%;
+}
+
+.contacts_heading {
+    color: white;
+}
+
+.contacts_link {
+    text-decoration: none;
+    color: grey;
+}
+
+.contacts_link:hover {
+    color: white;
+    transition: color 0.3s;
+}
+
+.contacts_address {
+    display: flex;
+    width: 52%;
+}
+
+.contacts_icons {
+    width: 50%;
+    padding-top: 25px;
+    display: flex;
+    gap: 1rem;
+}
+
+.githubIcon,
+.faInstagram,
+.faLinkedin {
+    color: grey;
+    transition: color 0.3s;
+}
+
+.githubIcon:hover ,
+.faInstagram:hover,
+.faLinkedin:hover {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .container__contacts {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container__contacts {
+        text-align: center;
+    }
+
+    .contacts_item {
+        width: 80%;
+    }
+
+    .contacts_address {
+        width: unset;
+    }
+
+    .contacts_icons {
+        width: 80%;
+        justify-content: center;
+    }
+}

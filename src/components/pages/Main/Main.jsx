@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import styles from './Main.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram,faGithub,faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import styles from './Main.module.css';
 
 const PageIndex = () => {
 
@@ -12,9 +12,15 @@ const PageIndex = () => {
                 <h2>Frontend developer</h2>
                 <p className={styles.whatIdo}>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>     
                 <div className={styles.icons}>
-                    <Link to=''  className={`${styles.githubIcon}`}><FontAwesomeIcon icon={faGithub} size="2xl" /></Link>
-                    <Link to='' className={`${styles.faInstagram}`}><FontAwesomeIcon icon={faInstagram} size="2xl" /></Link>
-                    <Link to=''  className={`${styles.faLinkedin}`}><FontAwesomeIcon icon={faLinkedin} size="2xl" /></Link>           
+                    <Link to='https://github.com/Maxim-Pv'  className={`${styles.githubIcon}`}>
+                        <FontAwesomeIcon icon={faGithub} size="2xl" />
+                    </Link>
+                    <Link to='https://instagram.com/maxim_pavlov13?igshid=OGQ5ZDc2ODk2ZA==' className={`${styles.faInstagram}`}>
+                        <FontAwesomeIcon icon={faInstagram} size="2xl" />
+                    </Link>
+                    <Link to='https://www.linkedin.com/in/maksim-pavlov-12b22528b/?locale=en_US'  className={`${styles.faLinkedin}`}>
+                        <FontAwesomeIcon icon={faLinkedin} size="2xl" />
+                    </Link>           
                 </div>
             </header>
             <main className={styles.main}>
@@ -29,3 +35,4 @@ const PageIndex = () => {
 }
 
 export default PageIndex
+

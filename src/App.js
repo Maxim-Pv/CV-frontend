@@ -1,10 +1,10 @@
-import './styles/App.css';
 import Navigation from './components/navigation/Navigation';
 import { Route, Routes } from 'react-router-dom';
-import PageIndex from './components/pages/Main';
-import PagePortfolio from './components/pages/Portfolio';
-import Contacts from './components/pages/Contacts';
-import Page404 from './components/pages/Page404';
+import PageIndex from './components/pages/Main/Main';
+import PagePortfolio from './components/pages/Portfolio/Portfolio';
+import Contacts from './components/pages/Contacts/Contacts';
+import Page404 from './components/pages/Page404/Page404';
+import './styles/App.css';
 
 
 function App() {
