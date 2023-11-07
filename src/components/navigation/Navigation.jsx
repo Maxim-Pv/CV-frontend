@@ -13,9 +13,6 @@ const Navigation = () => {
             <Link to='/contacts' className={styles.link}>
                 Contacts
             </Link>
-            <Link to='/page404' className={styles.link}>
-                Page404
-            </Link>
         </nav>
     )
 }

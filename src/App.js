@@ -1,5 +1,5 @@
 import Navigation from './components/navigation/Navigation';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import PageIndex from './components/pages/Main/Main';
 import PagePortfolio from './components/pages/Portfolio/Portfolio';
 import Contacts from './components/pages/Contacts/Contacts';
@@ -16,6 +16,7 @@ function App() {
         <Route path='/portfolio' element={<PagePortfolio />} />
         <Route path='/contacts' element={<Contacts />} />
         <Route path='/page404' element={<Page404 />} />
+        <Route path="*" element={<Navigate replace to="/page404"/>} />
       </Routes>
     </>
   )

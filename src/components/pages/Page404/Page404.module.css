@@ -12,7 +12,7 @@
 
 .number404 {
     font-size: 8rem;
-    color: white;
+    color: grey;
 }
 
 .link {
@@ -25,8 +25,8 @@
     color: white;
 }
 
-.button:hover {
+.link:hover {
     background-color: white;
     color: grey;
-    transition: background-color, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
