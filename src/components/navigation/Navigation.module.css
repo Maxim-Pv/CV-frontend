@@ -16,3 +16,14 @@
     color: white;
     transition: color 0.3s;
 }
+
+@media (max-width: 375px) {
+    .nav {
+      padding: 10px;
+      padding-bottom: 20px;
+    }
+
+    .link {
+      font-size: 13px;
+    }
+}

@@ -12,16 +12,11 @@ const Contacts = () => {
             </div>
             <div className={styles.contacts_item}>
                 <h3 className={styles.contacts_heading}>Phone</h3>
-                <span>+7(977)570-7193</span>
+                <span>Личный: +7(977)570-7193</span>
+                <span>Телеграмм: +7(977)570-7193</span>
+                <span>Whats up: +7(977)570-7193</span>
             </div>
-            <div className={styles.contacts_item}>
-                <h3 className={styles.contacts_heading}>Address</h3>
-                <span className={styles.contacts_address}>
-                    1234 Somewhere Road #5432
-                    Nashville, TN 00000
-                    United States of America
-                </span>
-            </div>
+       
             <div className={styles.contacts_icons}>
                 <Link to='https://github.com/Maxim-Pv'  className={`${styles.githubIcon}`}>
                     <FontAwesomeIcon icon={faGithub} size="2xl" />

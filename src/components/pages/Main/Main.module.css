@@ -1,65 +1,138 @@
+
 .container {
-    margin: 0 auto;
-    height: 100vh;
-    padding: 60px;
-    display: flex;
-    gap: 1rem;
-    background-color: rgba(15,23,42);
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 60px 100px;
+  display: flex;
+  gap: 1rem;
+  background-color: rgba(15, 23, 42);
 }
 
 .header {
-    width: 50%;
-    color: white;
-    padding-left: 20px;
+  width: 50%;
+  color: white;
+  padding-left: 20px;
 }
 
-.whatIdo {
-    color: #c6c6c6;
+.headers {
+  margin-bottom: 50px;
+}
+
+.quote {
+  width: 75%;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #c6c6c6;
+}
+
+.quote span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: right;
+  font-style: normal;
+  font-size: 14px;
 }
 
 .main {
-    width: 50%;
-    color: #c6c6c6;
+  width: 50%;
+  color: #c6c6c6;
 }
 
 .icons {
-    padding-top: 25px;
-    display: flex;
-    gap: 1rem;
+  padding-top: 30px;
+  display: flex;
+  gap: 1rem;
 }
 
 .githubIcon,
 .faInstagram,
 .faLinkedin {
-    color: grey;
-    transition: color 0.3s;
+  color: grey;
+  transition: color 0.3s;
 }
 
-.githubIcon:hover ,
+.githubIcon:hover,
 .faInstagram:hover,
 .faLinkedin:hover {
-    color: white;
+  color: white;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.stack_list {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 60px 20px;
+  }
 }
 
 @media (max-width: 600px) {
-    .container {
-        height: unset;
-        padding: 10px;
-        display: block;
-        text-align: center;
-    }
+  .container {
+    height: unset;
+    padding: 10px;
+    display: block;
+    text-align: center;
+  }
 
-    .header {
-        width: unset;
-        padding-left: 0;
-        margin-bottom: 30px;
-    }
+  .header {
+    width: unset;
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
 
-    .icons {
-        justify-content: center;
-    }
+  .quote {
+    width: 100%;
+    padding: 0 10px;
+  }
 
-    .main {
-        width: unset;
-    }
+  .icons {
+    padding-top: 10px;
+    justify-content: center;
+  }
+
+  .text { 
+    margin-bottom: 20px;
+  }
+
+  .main {
+    width: unset;
+    margin-bottom: 30px;
+  }
+}
+
+
+@media (max-width: 375px) {
+
+  .container {
+    position: relative;
+  }
+
+  .icons {
+    position: absolute;
+    bottom: 20px;
+    left: 30%;
+  }
+
+  .text {
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+
+  .main {
+    margin-bottom: 60px;
+  }
 }

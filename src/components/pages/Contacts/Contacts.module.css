@@ -1,17 +1,21 @@
 .container__contacts {
     margin: 0 auto;
     padding: 60px;
-    height: 100vh;
+    padding-left: 150px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 1rem;
     color: grey;
     background-color: rgba(15,23,42);
 }
 
 .contacts_item {
-    width: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .contacts_heading {
@@ -55,17 +59,13 @@
 
 @media (max-width: 600px) {
     .container__contacts {
-        padding: 20px;
+        padding: 50px;
     }
 }
 
 @media (max-width: 375px) {
     .container__contacts {
-        text-align: center;
-    }
-
-    .contacts_item {
-        width: 80%;
+        align-items: center;
     }
 
     .contacts_address {

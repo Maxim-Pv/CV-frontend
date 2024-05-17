@@ -7,8 +7,11 @@ const Navigation = () => {
             <Link to='/' className={styles.link}>
                 Home
             </Link>
-            <Link to='/portfolio' className={styles.link}>
-                Portfolio
+            <Link to='/experience' className={styles.link}>
+                Work experience
+            </Link>
+            <Link to='/apps' className={styles.link}>
+                Created apps
             </Link>
             <Link to='/contacts' className={styles.link}>
                 Contacts
