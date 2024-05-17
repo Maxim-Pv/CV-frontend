@@ -25,4 +25,4 @@ yarn-error.log*
 
 # prettier 
 .editorconfig
-.prettier.config.js
+prettier.config.js
