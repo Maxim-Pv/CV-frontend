@@ -45,7 +45,7 @@ const MainPage = () => {
             CSS Flexbox/Grid, Scss, React, Redux toolkit 
           </p>
           <p>
-            В настоящее время изучаю Node.js, PostgreSQL, Webpack, TypeScript и Nuxt.js и конечно английский. 
+            В настоящее время изучаю Node.js, PostgreSQL, Webpack, TypeScript, Next.js и конечно английский. 
             Стремлюсь к созданию удобных и эффективных пользовательских интерфейсов, 
             активно развиваюсь и совершенствую свои знания и умения. 
             Готов решать сложные задачи и приносить пользу команде. 
