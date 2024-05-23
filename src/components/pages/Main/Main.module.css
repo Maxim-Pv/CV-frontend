@@ -9,20 +9,19 @@
 }
 
 .header {
-  width: 50%;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-left: 20px;
-}
-
-.headers {
-  margin-bottom: 50px;
+  width: 50%;
+  max-height: 60vh;
+  color: white;
 }
 
 .quote {
   width: 75%;
   text-align: center;
   font-style: italic;
-  margin-bottom: 30px;
   color: #c6c6c6;
 }
 
@@ -36,12 +35,15 @@
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 50%;
+  max-height: 60vh;
   color: #c6c6c6;
 }
 
 .icons {
-  padding-top: 30px;
   display: flex;
   gap: 1rem;
 }
@@ -62,8 +64,7 @@
 .text {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 50px;
+  gap: 15px;
 }
 
 .stack_list {
@@ -111,6 +112,13 @@
   .main {
     width: unset;
     margin-bottom: 30px;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .headers {
+    margin-bottom: 20px;
   }
 }
 
