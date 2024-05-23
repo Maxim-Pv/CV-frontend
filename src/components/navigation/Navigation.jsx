@@ -8,10 +8,10 @@ const Navigation = () => {
                 Home
             </Link>
             <Link to='/experience' className={styles.link}>
-                Work experience
+                Experience
             </Link>
             <Link to='/apps' className={styles.link}>
-                Created apps
+                My apps
             </Link>
             <Link to='/contacts' className={styles.link}>
                 Contacts
