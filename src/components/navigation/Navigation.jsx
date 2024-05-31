@@ -1,20 +1,22 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import styles from "./Navigation.module.css";
 
 const Navigation = () => {
+  const { t } = useTranslation();
     return (
         <nav className={styles.nav}>
             <Link to='/' className={styles.link}>
-                Home
+                {t('home')}
             </Link>
             <Link to='/experience' className={styles.link}>
-                Experience
+                {t('experience')}
             </Link>
             <Link to='/apps' className={styles.link}>
-                My apps
+                {t('apps')}
             </Link>
             <Link to='/contacts' className={styles.link}>
-                Contacts
+                {t('contacts')}
             </Link>
         </nav>
     )

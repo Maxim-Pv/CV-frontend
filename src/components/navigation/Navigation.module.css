@@ -1,7 +1,7 @@
 .nav {
     display: flex;
     justify-content: space-around;
-    background-color: rgba(15,23,42);
+    background-color: hsl(218, 23%, 16%);
     padding: 20px;
     border-bottom: 1px solid grey;
 }
@@ -9,13 +9,16 @@
 .link {
     font-weight: 600;
     text-decoration: none;
-    color: grey
-}
-
-.link:hover {
-    color: white;
+    color: grey;
     transition: color 0.3s;
 }
+
+.link:hover,
+.link:focus {
+    color: white;
+}
+
+
 
 @media (max-width: 375px) {
     .nav {

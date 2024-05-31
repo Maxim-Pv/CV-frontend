@@ -5,13 +5,14 @@ import Experience from './components/pages/Experience/Experience';
 import MyApps from './components/pages/MyApps/MyApps';
 import Contacts from './components/pages/Contacts/Contacts';
 import Page404 from './components/pages/Page404/Page404';
+import LanguageSwitcher from './components/switcher/LanguageSwitcher';
 import './styles/App.css';
-
 
 function App() {
   return (
     <>
       <Navigation />
+      <LanguageSwitcher />
       <Routes>
         <Route index path='/' element={<MainPage />} /> 
         <Route path='/experience' element={<Experience />} />

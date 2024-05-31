@@ -1,0 +1,18 @@
+.container {
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  color: #797979;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.btn:hover {
+  color: white;
+}

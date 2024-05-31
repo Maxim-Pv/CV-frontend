@@ -13,7 +13,7 @@
   align-items: center;
   gap: 1rem;
   color: grey;
-  background-color: rgba(15,23,42);
+  background-color: hsl(218, 23%, 16%);
   list-style-type: none;
 }
 

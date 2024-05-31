@@ -1,0 +1,23 @@
+{
+  "home": "Home",
+  "experience": "Experience",
+  "apps": "Apps",
+  "contacts": "Contacts",
+  "name": "Maxim Pavlov",
+  "position": "Frontend developer",
+  "quote": "Life is not about finding yourself. Life is about creating yourself.",
+  "quoteAuthor": "Bernard Shaw",
+  "text1": "I earned an engineering degree but want to work in a more creative and dynamic field like frontend development, which aligns with my passion for technology and design. Creating visually appealing and functional websites gives me a sense of accomplishment, and I love seeing my work come to life on the screen.",
+  "text2": "I am currently self-studying frontend development, focusing on technologies like HTML, CSS, JS, TS, React and Redux, Node.js. I strive to create user-friendly and efficient interfaces, continuously improving my knowledge and skills. Ready to tackle challenging tasks and contribute value to the team.",
+  "dataWork1": "September 2018 - August 2022",
+  "positionWork1": "Operational, shift supervisor",
+  "descriptionWork1": "Direct supervision of the work of Internal Control Department (ICD) shift employees, planning the work of ICD employees to achieve the goals and objectives of the shift. Training ICD employees in methods and forms of customer service. Monitoring employees' adherence to technological and business processes. Protection of inventory and assets. Maintaining planning, reporting, and work documentation.",
+  "achievements": "Achievements:",
+  "achievementsText1": "Promoted by two positions",
+  "work2": "Badminton club SMASH",
+  "dataWork2": "September 2022 - present",
+  "positionWork2": "Trainer-administrator",
+  "descriptionWork2": "Developing and conducting training programs, individual and group sessions for athletes of various skill levels. Planning and coordinating competitions aimed at the development of the badminton team. Creating new training programs, preparing athletes for competitions, identifying and nurturing talented players. Enhancing the skill levels of athletes.",
+  "achievementsText2": "1st place at the championship of the Kyrgyz Republic"
+
+}

@@ -1,26 +1,28 @@
 
 .container {
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
   min-height: 100vh;
   padding: 60px 100px;
-  display: flex;
   gap: 1rem;
-  background-color: rgba(15, 23, 42);
+  background-color: hsl(218, 23%, 16%);
 }
 
 .header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 20px;
-  width: 50%;
+  text-align: center;
+  width: 40%;
   max-height: 60vh;
   color: white;
 }
 
+.quoteContainer {
+  padding: 0 20px;
+}
+
 .quote {
-  width: 75%;
-  text-align: center;
   font-style: italic;
   color: #c6c6c6;
 }
@@ -45,7 +47,8 @@
 
 .icons {
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  gap: 1.4rem;
 }
 
 .githubIcon,

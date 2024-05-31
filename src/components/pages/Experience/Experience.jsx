@@ -1,41 +1,33 @@
+import { useTranslation } from 'react-i18next';
 import st from './Experience.module.css';
   
   const Experience = () => {
+    const { t } = useTranslation();
     return (
       <ul className={st.container}>
         <li className={st.item}>
           <div className={st.header}>
             <h3 className={st.heading}>Gold apple</h3>
-            <span className={st.date}>Сентябрь 2018 - Aвгуст 2022</span> 
+            <span className={st.date}>{t('dataWork1')}</span> 
           </div>
-          <h3 className={st.heading}>Оперативный, старший смены</h3>
+          <h3 className={st.heading}>{t('positionWork1')}</h3>
           <div className={st.text}>
-            Непосредственное руководство работой сотрудников смены ОВК(отдел внутреннего контроля) 
-            планирование работы сотрудников ОВК с целью реализации целей и задач смены. 
-            Обучение сотрудников ОВК методам и формам работы с клиентами. 
-            Контроль выполнения сотрудниками технологических и бизнес-процессов. 
-            Защита товарно-материальных ценностей. Ведение планово-отчетной и рабочей документации. 
+            {t('descriptionWork1')}
             <p>
-              <span>Достижения:</span> два повышения в должности
+              <span>{t('achievements')}</span> {t('achievementsText1')}
             </p>
           </div>
         </li>
         <li className={st.item}>
           <div className={st.header}>
-            <h3 className={st.heading}>Бадминтонный клуб SMASH</h3>
-            <span className={st.date}>Сентябрь 2022 - наст.время</span> 
+            <h3 className={st.heading}>{t('work2')}</h3>
+            <span className={st.date}>{t('dataWork2')}</span> 
           </div>
-          <h3 className={st.heading}>Тренер-администратор</h3>
+          <h3 className={st.heading}>{t('positionWork2')}</h3>
           <div className={st.text}>
-            Разработка и проведение тренировочных программ, индивидуальных
-            и групповых занятий для спортсменов разного уровня подготовки.
-            Планирование и координация соревнований, направленных на
-            развитие бадминтонной команды.
-            Разработка новых программ обучения, подготовка спортсменов к
-            соревнованиям, выявление и развитие талантливых игроков.
-            Повышение уровня подготовки спортсменов.
+            {t('descriptionWork2')}
             <p>
-              <span>Достижения:</span> 1 место на чемпионате Кыргызской республики
+              <span>{t('achievements')}</span> {t('achievementsText2')}
             </p>
           </div>
         </li>

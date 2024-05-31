@@ -1,20 +1,25 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation } from "react-i18next";
 import styles from "./Main.module.css";
 
 const MainPage = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className={styles.container}>
       <header className={styles.header}>
         <div className={styles.headers}>
-          <h1>Maxim Pavlov</h1>
-          <h2>Frontend developer</h2>
+          <h1>{t('name')}</h1>
+          <h2>{t('position')}</h2>
         </div>
-        <p className={styles.quote}>
-          «Жизнь — это не поиск себя. Жизнь — это создание себя».
-          <span>Джордж Бернард Шоу</span>
-        </p>
+        <div className={styles.quoteContainer}>
+          <p className={styles.quote}>
+            {t('quote')}
+            <span>{t('quoteAuthor')}</span>
+          </p>
+        </div>
         
         <div className={styles.icons}>
           <Link
@@ -39,17 +44,8 @@ const MainPage = () => {
       </header>
       <main className={styles.main}>
         <div className={styles.text}>
-          <p>
-            Диплом инженера обеспечил аналитические навыки и способность к быстрому обучению. 
-            Увлечен фронтенд-разработкой, имею опыт написания приложений используя 
-            CSS Flexbox/Grid, Scss, React, Redux toolkit 
-          </p>
-          <p>
-            В настоящее время изучаю Node.js, PostgreSQL, Webpack, TypeScript, Next.js и конечно английский. 
-            Стремлюсь к созданию удобных и эффективных пользовательских интерфейсов, 
-            активно развиваюсь и совершенствую свои знания и умения. 
-            Готов решать сложные задачи и приносить пользу команде. 
-          </p>
+          <p>{t('text1')}</p>
+          <p>{t('text2')}</p>
         </div>
         <ul className={styles.stack_list}>
           <li>HTML5</li>
