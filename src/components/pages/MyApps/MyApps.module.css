@@ -50,6 +50,14 @@
   border-radius: 15px;
 }
 
+.image1:hover,
+.image2:hover,
+.image3:hover,
+.image4:hover {
+  transition: filter 0.3s;
+  filter: drop-shadow(0px 5px 15px grey);
+}
+
 .image1 {
   background: url(../../../screenshots/comments.jpeg);
   background-repeat: no-repeat;

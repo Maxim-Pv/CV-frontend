@@ -4,6 +4,7 @@
   right: 30px;
   display: flex;
   gap: 10px;
+  z-index: 1;
 }
 
 .btn {
@@ -15,4 +16,11 @@
 }
 .btn:hover {
   color: white;
+}
+
+@media (max-width: 375px) {
+  .container {
+    top: 48px;
+    right: 20px;
+  }
 }

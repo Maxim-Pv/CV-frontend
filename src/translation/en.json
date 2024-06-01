@@ -9,6 +9,7 @@
   "quoteAuthor": "Bernard Shaw",
   "text1": "I earned an engineering degree but want to work in a more creative and dynamic field like frontend development, which aligns with my passion for technology and design. Creating visually appealing and functional websites gives me a sense of accomplishment, and I love seeing my work come to life on the screen.",
   "text2": "I am currently self-studying frontend development, focusing on technologies like HTML, CSS, JS, TS, React and Redux, Node.js. I strive to create user-friendly and efficient interfaces, continuously improving my knowledge and skills. Ready to tackle challenging tasks and contribute value to the team.",
+
   "dataWork1": "September 2018 - August 2022",
   "positionWork1": "Operational, shift supervisor",
   "descriptionWork1": "Direct supervision of the work of Internal Control Department (ICD) shift employees, planning the work of ICD employees to achieve the goals and objectives of the shift. Training ICD employees in methods and forms of customer service. Monitoring employees' adherence to technological and business processes. Protection of inventory and assets. Maintaining planning, reporting, and work documentation.",
@@ -18,6 +19,34 @@
   "dataWork2": "September 2022 - present",
   "positionWork2": "Trainer-administrator",
   "descriptionWork2": "Developing and conducting training programs, individual and group sessions for athletes of various skill levels. Planning and coordinating competitions aimed at the development of the badminton team. Creating new training programs, preparing athletes for competitions, identifying and nurturing talented players. Enhancing the skill levels of athletes.",
-  "achievementsText2": "1st place at the championship of the Kyrgyz Republic"
+  "achievementsText2": "1st place at the championship of the Kyrgyz Republic",
+
+  "userCan": "User can:",
+  "userCanText1": "View the optimal layout of the application depending on the device screen size",
+  "userCanText2": "View hover states for all interactive elements on the page",
+  
+  "app1": {
+    "name": "Interactive comments",
+    "userCanText3": "Create, read, update, and delete comments and replies",
+    "userCanText4": "Like comments"
+  },
+  "app2": {
+    "name": "Sneaker Store",
+    "userCanText3": "Open the lightbox gallery by clicking on the large product image",
+    "userCanText4": "Switch the large product image by clicking on the small thumbnail image",
+    "userCanText5": "Add items to the cart",
+    "userCanText6": "View the cart and remove items from it"
+  },
+  "app3": {
+    "name": "To-Do",
+    "userCanText3": "Add new tasks to the list",
+    "userCanText4": "Mark tasks as completed",
+    "userCanText5": "Delete tasks from the list",
+    "userCanText6": "Filter by all/active/completed tasks",
+    "userCanText7": "Clear all completed tasks",
+    "userCanText8": "Toggle between light and dark mode",
+    "userCanText9": "Drag and drop items in the list to reorder them"
+  }
+
 
 }

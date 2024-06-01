@@ -9,13 +9,18 @@
 }
 
 .header {
+  width: 40%;
+  text-align: center;
+  color: white;
+}
+
+.header,
+.main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: center;
-  width: 40%;
+  min-height: 60vh;
   max-height: 60vh;
-  color: white;
 }
 
 .quoteContainer {
@@ -37,10 +42,8 @@
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   width: 50%;
+  min-height: 60vh;
   max-height: 60vh;
   color: #c6c6c6;
 }
@@ -82,6 +85,16 @@
   .container {
     padding: 60px 20px;
   }
+
+  .header {
+    max-height: unset;
+    min-height: unset;
+  }
+
+  .main {
+    max-height: unset;
+    min-height: unset;
+  }
 }
 
 @media (max-width: 600px) {
@@ -94,13 +107,11 @@
 
   .header {
     width: unset;
-    padding-left: 0;
     margin-bottom: 30px;
   }
 
   .quote {
     width: 100%;
-    padding: 0 10px;
   }
 
   .icons {

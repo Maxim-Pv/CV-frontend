@@ -1,17 +1,19 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
 import st from './MyApps.module.css'
 
 const MyApps = () => {
+  const { t } = useTranslation();
   return (
     <ul className={st.container}>
       <li className={st.item}>
-        <h3 className={st.header}>Интерактивные комментарии</h3>
+        <h3 className={st.header}>{t('app1.name')}</h3>
         <ul className={st.list}>
-          <li>Возможности пользователя:</li>
-          <li>Просмотр оптимального макета приложения в зависимости от размера экрана устройства</li>
-          <li>Просматривать состояния наведения для всех интерактивных элементов на странице</li>
-          <li>Создание, чтение, обновление и удаление комментариев и ответов</li>
-          <li>Лайкать комментарии</li>
+          <li>{t('userCan')}</li>
+          <li>{t('userCanText1')}</li>
+          <li>{t('userCanText2')}</li>
+          <li>{t('app1.userCanText3')}</li>
+          <li>{t('app2.userCanText4')}</li>
         </ul>
         <div className={st.buttonLink}>
           <Link to="https://interactive-comments-omega-snowy.vercel.app/" className={`${st.link} ${st.image1}`}/>
@@ -19,15 +21,15 @@ const MyApps = () => {
       </li>
 
       <li className={st.item}>
-        <h3 className={st.header}>Магазин кроссовок</h3>
+        <h3 className={st.header}>{t('app2.name')}</h3>
         <ul className={st.list}>
-          <li>Возможности пользователя:</li>
-          <li>Просмотр оптимального макета приложения в зависимости от размера экрана устройства</li>
-          <li>Просматривать состояния наведения для всех интерактивных элементов на странице</li>
-          <li>Открывать галерею лайтбокса, нажав на большое изображение продукта</li>
-          <li>Переключать большое изображение продукта, нажав на маленькое миниатюрное изображение</li>
-          <li>Добавлять товары в корзину</li>
-          <li>Просматривать корзину и удалять из нее товары</li>
+          <li>{t('userCan')}</li>
+          <li>{t('userCanText1')}</li>
+          <li>{t('userCanText2')}</li>
+          <li>{t('app2.userCanText3')}</li>
+          <li>{t('app2.userCanText4')}</li>
+          <li>{t('app2.userCanText5')}</li>
+          <li>{t('app2.userCanText6')}</li>
         </ul>
         <div className={st.buttonLink}>
           <Link to="https://sneakers-shop-eight.vercel.app/" className={`${st.link} ${st.image2}`}/>
@@ -35,18 +37,18 @@ const MyApps = () => {
       </li>
 
       <li className={st.item}>
-        <h3 className={st.header}>Todo</h3>
+        <h3 className={st.header}>{t('app3.name')}</h3>
         <ul className={st.list}>
-          <li>Возможности пользователя:</li>
-          <li>Просмотр оптимального макета приложения в зависимости от размера экрана устройства</li>
-          <li>Просматривать состояния наведения для всех интерактивных элементов на странице</li>
-          <li>Добавлять новые задачи в список</li>
-          <li>Отмечать задачи как выполненные</li>
-          <li>Удалять задачи из списка</li>
-          <li>Фильтровать по всем/активным/полным задачам</li>
-          <li>Удалять все выполненные задачи</li>
-          <li>Переключять светлый и темный режим</li>
-          <li>Перетаскивать элементы в списке, чтобы изменить их порядок.</li>
+          <li>{t('userCan')}</li>
+          <li>{t('userCanText1')}</li>
+          <li>{t('userCanText2')}</li>
+          <li>{t('app3.userCanText3')}</li>
+          <li>{t('app3.userCanText4')}</li>
+          <li>{t('app3.userCanText5')}</li>
+          <li>{t('app3.userCanText6')}</li>
+          <li>{t('app3.userCanText7')}</li>
+          <li>{t('app3.userCanText8')}</li>
+          <li>{t('app3.userCanText9')}</li>
         </ul>
         <div className={st.buttonLink}>
           <Link to="https://fr-mentor-todo-app.vercel.app/" className={`${st.link} ${st.image3}`}/>
